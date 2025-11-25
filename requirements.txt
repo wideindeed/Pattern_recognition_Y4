@@ -1,0 +1,25 @@
+# Core Logic
+numpy<2.0.0
+opencv-python
+pillow
+mediapipe
+
+# Deep Learning (TensorFlow)
+# We aim for 2.10 because your Gender/Hair models are older.
+# If Age/Race (Newer) fails, you might need to re-export it in TF 2.10
+tensorflow==2.10.0
+
+# Deep Learning (PyTorch)
+# Standard CPU version. If you have NVIDIA, follow PyTorch website instructions.
+torch
+torchvision
+torchaudio
+
+# HuggingFace (For Skin Tone & Clothing)
+transformers
+huggingface-hub
+safetensors
+accelerate
+
+# UI
+tk
