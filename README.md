@@ -11,7 +11,7 @@ A comprehensive, real-time computer vision dashboard that aggregates heterogeneo
 
 </div>
 
-## 📋 Table of Contents
+##  Table of Contents
 - [Overview](#overview)
 - [Features](#features)
 - [Architecture](#architecture)
@@ -20,12 +20,12 @@ A comprehensive, real-time computer vision dashboard that aggregates heterogeneo
 - [Models Used](#models-used)
 - [License](#license)
 
-## 📖 Overview
+##  Overview
 This application solves the challenge of running multiple, resource-intensive AI models simultaneously on a live video feed. By utilizing a hybrid runtime environment, it bypasses version conflicts (e.g., Keras 2 vs Keras 3) and provides a "stabilized" reporting engine that eliminates frame-by-frame prediction jitter.
 
 It is designed for use cases in **retail analytics**, **demographic profiling**, and **automated security reporting**.
 
-## ✨ Features
+##  Features
 * **Real-Time Analysis:** Processes live webcam feed to detect faces and clothing items.
 * **Holistic Profiling:** Simultaneously predicts Age, Gender, Ethnicity, Skin Tone, Hair Style, and Clothing.
 * **Hybrid Runtime Engine:** Seamlessly bridges TensorFlow, PyTorch/HuggingFace, and ONNX models.
@@ -33,7 +33,7 @@ It is designed for use cases in **retail analytics**, **demographic profiling**,
 * **Granular Color Logic:** Analyzes clothing items in HSV color space to distinguish specific shades (e.g., "Dark Blue" vs "Black").
 * **Interactive GUI:** Built with Tkinter for a responsive, user-friendly experience with a "Scan Mode" workflow.
 
-## 🏗️ Architecture
+##  Architecture
 The system follows a modular "Hub-and-Spoke" architecture:
 1.  **Input:** OpenCV captures video frames.
 2.  **Preprocessing Hub:** Resizes and normalizes crops for specific model requirements (224x224, 299x299, etc.).
@@ -44,7 +44,7 @@ The system follows a modular "Hub-and-Spoke" architecture:
 4.  **Stabilizer:** Aggregates the last `N` frames to determine the most probable attribute.
 5.  **Output:** Tkinter Dashboard updates asynchronously to maintain UI responsiveness.
 
-## ⚙️ Installation
+##  Installation
 
 ### Prerequisites
 * Python 3.9 or higher
@@ -70,7 +70,7 @@ The system follows a modular "Hub-and-Spoke" architecture:
     * `skin_tone_model.safetensors` (+ `config.json`)
     * `fashion_model/` (Directory or HuggingFace cache)
 
-## 🚀 Usage
+##  Usage
 
 Run the main dashboard script:
 
