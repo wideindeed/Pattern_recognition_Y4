@@ -1,11 +1,15 @@
+<div align="center">
+
 # 👁️ Multi-Attribute Biometric Profiler
 
-A comprehensive, real-time computer vision dashboard that aggregates heterogeneous deep learning models to generate a holistic biometric profile of a subject. This project integrates **TensorFlow**, **PyTorch**, and **ONNX** runtimes into a single, stabilized GUI application.
+A comprehensive, real-time computer vision dashboard that aggregates heterogeneous deep learning models to generate a holistic biometric profile.
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.10-orange)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red)
 ![ONNX](https://img.shields.io/badge/ONNX-Runtime-blueviolet)
+
+</div>
 
 ## 📋 Table of Contents
 - [Overview](#overview)
@@ -33,7 +37,8 @@ It is designed for use cases in **retail analytics**, **demographic profiling**,
 The system follows a modular "Hub-and-Spoke" architecture:
 1.  **Input:** OpenCV captures video frames.
 2.  **Preprocessing Hub:** Resizes and normalizes crops for specific model requirements (224x224, 299x299, etc.).
-3.  **Inference Engine:** * *ONNX Runtime:* Age & Ethnicity (EfficientNet)
+3.  **Inference Engine:**
+    * *ONNX Runtime:* Age & Ethnicity (EfficientNet)
     * *TensorFlow (Legacy):* Gender (Xception) & Hair (U-Net)
     * *PyTorch:* Skin Tone (ViT) & Clothing (Object Detection)
 4.  **Stabilizer:** Aggregates the last `N` frames to determine the most probable attribute.
@@ -70,4 +75,4 @@ The system follows a modular "Hub-and-Spoke" architecture:
 Run the main dashboard script:
 
 ```bash
-python main.py
+python dashboard.py
